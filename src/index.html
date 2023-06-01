@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Vault</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div
+        class="navbar bg-TopNav h-[100px] flex flex-col lg:flex-row items-center gap-10 lg:gap-40"
+      >
+        <img src="/images/image_vault-pic.png" alt="" class="h-8 ml-2 lg:h-8" />
+        <div class="input flex flex-col">
+          <div class="text-white">
+            <i
+              class="fa-solid fa-magnifying-glass text-xs lg:text-lg absolute lg:top-[40px] z-200 ml-1 top-[75px] text-black"
+            ></i>
+
+            <input
+              type="text"
+              placeholder="Search files..."
+              class="lg:h-8 lg:w-80 h-6 w-40 rounded-sm px-10 py-2 outline-none mt-[28px]"
+            />
+            <i
+              class="fa-solid fa-xmark absolute lg:top-[52px] text-black text-lg z-200 ml-[-18px] mt-[-12px]"
+            ></i>
+            <div class="flex flex-row gap-10 text-white mt-2">
+              <p>
+                Size
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+              <p>
+                Orientation
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+              <p>
+                Metadata
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row gap-2 lg:gap-10">
+          <p class="text-white">
+            <i class="fa-solid fa-gear"></i> Advance Settings
+          </p>
+          <p class="text-white"><i class="fa-solid fa-user"></i> John Doe</p>
+        </div>
+      </div>
+      <div class="subnav bg-SubNav h-10 flex">
+        <div class="flex flex-row text-white p-1 text-sm items-center gap-28">
+          <div>
+            <p class="ml-2">
+              <i class="fa-solid fa-cloud-arrow-up"></i> Import files...
+            </p>
+          </div>
+          <div class="flex flex-row gap-5 text-[15px] ml-20">
+            <p><i class="fa-solid fa-upload"></i> Publish</p>
+            <p><i class="fa-solid fa-download"></i> Download</p>
+            <p><i class="fa-solid fa-circle-nodes"></i> Organize</p>
+            <p><i class="fa-solid fa-arrows-up-down-left-right"></i> Move</p>
+            <p><i class="fa-solid fa-share-nodes"></i> Share</p>
+            <p><i class="fa-solid fa-ellipsis"></i> More</p>
+          </div>
+          <div>
+            <i class="bx bx-grid-alt text-lg"></i>
+            <i class="bx bxs-grid text-lg"></i>
+            <i class="bx bxs-grid-alt text-lg"></i>
+          </div>
+          <div class="flex flex-row justify-center items-center gap-2">
+            <i class="fa-solid fa-xmark text-lg"></i>
+            <p>Delete</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-6 grid-flow-col h-screen">
+        <div class="col-span-1 sm:col-span-1 p-4 bg-TopNav">
+          <div class="flex flex-col gap-5">
+            <div class="flex text-[11px] gap-3 text-white">
+              <h3 class="bg-SubNav">Catagories</h3>
+              <h3>Library</h3>
+              <h3>Agreements</h3>
+            </div>
+            <div class="flex flex-row text-[10px] gap-1 text-white">
+              <div class="flex text-white gap-1 items-center">
+                <i class="bx bxs-folder"></i>
+                <h3>Catagories</h3>
+              </div>
+              <div class="flex gap-1 items-center">
+                <div class="relative bg-white h-2 w-4 rounded-full">
+                  <div
+                    class="absolute bg-black h-2 w-2 top-0 left-[1px] rounded-full"
+                  ></div>
+                </div>
+                <h3>Extended search</h3>
+              </div>
+            </div>
+            <div class="searchbar"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+
+        <div class="col-span-1 sm:col-span-4 bg-gray-200 p-4 bg-SubNav">
+          <!-- Column 2 content -->
+        </div>
+        <div class="col-span-1 sm:col-span-1 bg-gray-200 p-4 bg-Body">
+          <!-- Column 3 content -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
